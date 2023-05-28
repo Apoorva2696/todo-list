@@ -25,7 +25,7 @@ const TodoCreator = ({ theme, todo, setTodo, clearInput, inputRef, isInputEmpty,
     const classes = useStyles();
 
     return (
-        <div className="form__input">
+        <div className="form__input" data-testid="formInput">
             <ThemeProvider theme={theme}>
                 <FormControl   className={classes.label}>
                     <TextField

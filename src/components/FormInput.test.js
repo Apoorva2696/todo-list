@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import TodoCreator from './FormInput';
 
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Todo List/i);
+  render(<TodoCreator />);
+  const linkElement = screen.getByTestId("formInput");
   expect(linkElement).toBeInTheDocument();
 });

@@ -98,7 +98,7 @@ const Form = () => {
     }, [todos])
 
     return (
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleSubmit} className="form" data-testid="form">
 
                 <TodoCreator
                     theme={theme}
